@@ -1,0 +1,41 @@
+/* Global variables */
+$color-red: red;
+$largura: 200px;
+$altura: 150px;
+
+/* Using @mixin */
+
+@mixin katana {
+    /* A variable with local escope will be 
+    used on mixin. */
+    width: 400px;
+    height: 200px;
+}
+
+body{
+    background-color: #023023;
+}
+
+#div1{
+    @include katana();
+    margin-bottom: 15px;
+    background-color: antiquewhite;
+}
+
+#div2{
+    width: $largura;
+    height: $altura;
+    margin-bottom: 15px;
+    background-color: beige;
+}
+
+/* Variables global on change*/
+$largura: 300px;
+$altura: 150px;
+
+#div3{
+    width: $largura;
+    height: $altura;
+    margin-bottom: 15px;
+    background-color: $color-red;
+}
