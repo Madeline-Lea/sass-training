@@ -1,0 +1,29 @@
+/* Global variables */
+/* Using @mixin */
+body {
+  background-color: #023023;
+}
+
+#div1 {
+  /* A variable with local escope will be 
+  used on mixin. */
+  width: 400px;
+  height: 200px;
+  margin-bottom: 15px;
+  background-color: antiquewhite;
+}
+
+#div2 {
+  width: 200px;
+  height: 150px;
+  margin-bottom: 15px;
+  background-color: beige;
+}
+
+/* Variables global on change*/
+#div3 {
+  width: 300px;
+  height: 150px;
+  margin-bottom: 15px;
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
